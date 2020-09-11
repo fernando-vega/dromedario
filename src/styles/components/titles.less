@@ -1,0 +1,109 @@
+.title-line {
+    text-align: left;
+    margin-top: 25px;
+    position: relative;
+    h3 {
+        font-size: 50px;
+        font-family: @font-titles;
+        font-weight: normal;
+        color: @color-bluegreen;
+        line-height: 1.2em;
+        margin: 0;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 26%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 74%;
+            height: 3px;
+            border-radius: 5px;
+            background: @color-bluegreen;
+            .responsive(@screen-md, {
+                width: 68%;
+                left: 32%;
+            }
+            );
+            .responsive(@screen-sm, {
+                width: 51%;
+                left: 49%;
+            }
+            );
+            .responsive(@screen-xs, {
+                display: none;
+            }
+            );
+        }
+        &.medium-title {
+            &:after {
+                left: 38%;
+                width: 60%;
+                .responsive(@screen-md, {
+                    width: 50%;
+                    left: 50%;
+                }
+                );
+                .responsive(@screen-sm, {
+                    width: 45%;
+                    left: 55%;
+                }
+                );
+                .responsive(@screen-xs, {
+                    display: none;
+                }
+                );
+            }
+        }
+        &.large-title {
+            &:after {
+                left: 45%;
+                width: 55%;
+                .responsive(@screen-md, {
+                    width: 40%;
+                    left: 60%;
+                }
+                );
+                .responsive(@screen-sm, {
+                    width: 35%;
+                    left: 65%;
+                }
+                );
+                .responsive(@screen-xs, {
+                    display: none;
+                }
+                );
+            }
+        }
+    }
+    span {
+        height: 30px;
+        width: 30px;
+        background: @color-bluegreen;
+        position: absolute;
+        border-radius: 50%;
+        right: 0;
+        top: 15px;
+    }
+}
+
+.content-green {
+    background: @color-bluegreen;
+    .title-white {
+        color: @color-white;
+        font-size: 40px;
+        font-family: @font-titles;
+        font-weight: 400;
+        padding: 60px 12px;
+    }
+}
+
+.title-news {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    font-family: @font-titles;
+    .responsive(@screen-sm,{
+        margin-top: 20px;
+    });
+}

@@ -1,0 +1,186 @@
+.social-icons {
+    padding-left: 12px;
+    z-index: 2;
+    position: relative;
+    svg {
+        margin: 0 3px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        transition: all .2s ease-in-out;
+        &:hover {
+            padding: 1px;
+            border: 2px @color-white solid;
+        }
+    }
+}
+
+.menu-icon {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 50px;
+    cursor: pointer;
+    top: 3px;
+    /* to center */
+    float: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.menu-icon>span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 0.4em;
+    margin-top: -0.5em;
+    background-color: #006ba2;
+}
+
+.menu-icon>span:before,
+.menu-icon>span:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #006ba2;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.menu-icon>span:before {
+    -webkit-transform: translateY(-0.7em);
+    transform: translateY(-0.7em);
+}
+
+.menu-icon>span:after {
+    -webkit-transform: translateY(0.7em);
+    transform: translateY(0.7em);
+}
+
+
+/* OPENED */
+
+.menu-icon.open {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menu-icon.open>span:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.menu-icon.open>span:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.icons-about {
+    margin-bottom: 50px;
+    a {
+        color: @font-text-color;
+        p{
+            margin: @padding*.5 0;
+            width: 100%;
+        }
+        svg {
+            path {
+                transition: all .3s;
+                fill: @color-purple;
+            }
+            text {
+                transition: all .3s;
+                fill: @color-purple;
+                font-family: @font-titles;
+                font-size: 70px;
+            }
+            &:hover {
+                path {
+                    fill: @color-bluegreen;
+                }
+                text {
+                    fill: @color-bluegreen;
+                }
+            }
+        }
+        &:nth-child(2n+1) {
+            svg {
+                path {
+                    transition: all .3s;
+                    fill: @color-bluegreen;
+                }
+                text {
+                    transition: all .3s;
+                    fill: @color-bluegreen;
+                }
+                &:hover {
+                    path {
+                        fill: @color-purple;
+                    }
+                    text {
+                        fill: @color-purple;
+                    }
+                }
+            }
+        }
+    }
+    .uITabs{
+        li{
+            list-style: none;
+        }
+        .tabs__content{
+            line-height: 1.5em;
+            text-align: left;
+        }
+    }
+}
+
+.icon-contact {
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    svg {
+        left: 68%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        .responsive(@screen-md,{
+            left: 60%;
+        });
+        .responsive(@screen-sm,{
+            left: 55%;
+        });
+        .responsive(@screen-xs,{
+            left: 60%;
+        });
+    }
+    &.icon__exception{
+        svg{
+            top: 61%;
+        }
+    }
+}
+
+.icon-contact-content {
+    h3 {
+        font-size: 32px;
+        color: @color-bluegreen;
+        font-family: @font-titles;
+        font-weight: 400;
+    }
+    p {
+        font-size: 16px;
+        position: relative;
+        z-index: 2;
+    }
+    &:nth-child(2n) {
+        h3 {
+            color: @color-purple;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.gray-section{
+    background: @color-gray-light;
+}
+.slide-news{
+    margin: 50px 0;
+    .item{
+        .text_slide{
+            padding: 0 12px;
+            p{
+                text-align: justify;
+                padding-right: 12px;
+                line-height: 1.2em;
+                .responsive(@screen-sm,{
+                    padding: 0;
+                });
+            }
+        }
+    }
+}
+
+#slide-principal{
+    height: 100%;
+    .owl-stage-outer,
+    .owl-stage,
+    .owl-item{
+        height: 100%;
+        &.active{
+            .slide__item{
+                .item__component{
+                    &.animate__fadeIn{
+                        .fadeIn;
+                    }
+                    &.animate__bounceInDown{
+                        .bounceInDown;
+                        animation-delay: .3s;
+                    }
+                    &.animate__bounceInRight{
+                        .bounceInRight;
+                        animation-delay: .3s;
+                    }
+                }
+            }
+        }
+    }
+    .slide__item{
+        height: 100%;
+        position: relative;
+        width: 100%;
+        .item__component{
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            &.item__image{
+                background-position: center;
+                background-size: cover;
+            }
+            .item__content{
+                color: @color-white;
+                font-size: 2em;
+                left: 50%;
+                position: absolute;
+                text-shadow: 0 0 @padding*.5 @color-gray;
+                text-align: center;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                h1, h2, h3, h4{
+                    font-weight: 300;
+                }
+            }
+
+            &.item__animate{
+                .animated;
+            }
+        }
+    }
+    .owl-dots{
+        bottom: @padding;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+        .owl-dot{
+            display: inline-block;
+            margin: 0 @padding*.5;
+            &.active{
+                span{
+                    background-color: @color-bluegreen;
+                }
+            }
+            span{
+                @dimention: @padding*1.5;
+                background-color: @color-white;
+                border-radius: 50%;
+                box-shadow: 0 0 @padding*.5 @color-gray;
+                display: block;
+                height: @dimention;
+                width: @dimention;
+            }
+        }
+    }
+}

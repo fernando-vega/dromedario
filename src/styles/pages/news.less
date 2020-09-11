@@ -1,0 +1,152 @@
+.news {
+    position: relative;
+    padding: 50px 30px;
+    transition: all .2s;
+    .item-news {
+        cursor: pointer;
+        padding-bottom: 50px;
+        .img-news {
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            transition: all .2s;
+        }
+        h4{
+            transition: all .2s;
+        }
+        &:hover {
+            .img-news {
+                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+                border-color: @color-gray;
+                -webkit-transform: scale(1.03);
+                transform: scale(1.03);
+            }
+            h4{
+                text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+    .load-more-news{
+        h4{
+            font-size: 28px;
+            color: @color-gray;
+            font-weight: bold;
+            font-family: @font-titles;
+            margin: 0;
+            line-height: 1em;
+            position: relative;
+            width: 100%;
+            padding-right: 40px;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 78%;
+                height: 3px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: @color-bluegreen;
+                margin-left: -30px;
+                .responsive(@screen-md,{
+                    width: 65%;
+                });
+                .responsive(@screen-sm,{
+                    width: 55%;
+                });
+                .responsive(@screen-xs,{
+                    display: none;
+                });
+            }
+            &:after{
+                content: url(../images/icons/around-down.png);
+                margin-left: 12px;
+                position: absolute;
+                animation: jump .6s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+    .responsive(@screen-sm,{
+        padding: 20px;
+    });
+}
+.news-item{
+    padding: 50px;
+    .responsive(@screen-sm,{
+        padding: 20px;
+    });
+    .img-news{
+        margin: 20px 0;
+    }
+    .back-news{
+        h4{
+            font-size: 28px;
+            color: @color-gray;
+            font-weight: bold;
+            font-family: @font-titles;
+            margin: 0;
+            line-height: 1em;
+            position: relative;
+            width: 100%;
+            padding-right: 40px;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 70%;
+                height: 3px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: @color-bluegreen;
+                margin-left: -50px;
+                .responsive(@screen-md,{
+                    width: 60%;
+                });
+                .responsive(@screen-sm,{
+                    width: 50%;
+                });
+                .responsive(@screen-xs,{
+                    display: none;
+                });
+            }
+            &:after{
+                content: url(../images/icons/around-down.png);
+                margin-left: 12px;
+                position: absolute;
+                animation: jump .6s infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+@-webkit-keyframes jump {
+  0%   { margin-top: -4px; }
+  25%   { margin-top: -2px; }  
+  50%   { margin-top: 0px; }
+  75%   { margin-top: 4px; }
+  100% { margin-top: 8px; }
+}
+@-moz-keyframes jump {
+  0%   { margin-top: -4px; }
+  25%   { margin-top: -2px; }  
+  50%   { margin-top: 0px; }
+  75%   { margin-top: 4px; }
+  100% { margin-top: 8px; }
+}
+@-o-keyframes jump {
+  0%   { margin-top: -4px; }
+  25%   { margin-top: -2px; }  
+  50%   { margin-top: 0px; }
+  75%   { margin-top: 4px; }
+  100% { margin-top: 8px; }
+}
+@keyframes jump {
+  0%   { margin-top: -4px; }
+  25%   { margin-top: -2px; }  
+  50%   { margin-top: 0px; }
+  75%   { margin-top: 4px; }
+  100% { margin-top: 8px; }
+}

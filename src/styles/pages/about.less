@@ -1,0 +1,70 @@
+.team-content{
+    margin: 0;
+    .team-item{
+        padding: 0 6px;
+        text-align: center;
+        .thumbnail-variant{
+            margin-top: 20px;
+            padding: 30px 12px;
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            transition: .2s ease-in-out;
+            display: inline-block;
+            &:hover{
+                box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+                border-color: @color-bluegreen;
+                .thumbnail-variant-img-wrap{
+                    &:before{
+                        opacity: 0;
+                    }
+                    .img-circle{
+                        will-change: transform;
+                        -webkit-transform: scale(1.18);
+                        transform: scale(1.18);
+                    }
+                }
+            }
+            .thumbnail-variant-img-wrap{
+                position: relative;
+                display: inline-block;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 99%;
+                    border-radius: 50%;
+                    background: rgba(0, 0, 0, 0.4);
+                    transition: .2s ease-in-out;
+                }
+                .img-circle{
+                    border-radius: 50%;
+                    transition: all .2s ease-in;
+                }
+            }
+            .text-dusty-gray{
+                color: #9b9b9b;
+            }
+            .divider-fullwidth{
+                margin-top: 12px;
+                margin-bottom: 17px;
+                height: 1px;
+                width: 100%
+            }
+            .bg-porcelain{
+                background: #e5e7e9;
+                fill: #e5e7e9;
+            }
+            .link-gray-base{
+                color: @color-bluegreen;
+                transition: all .3s;
+                cursor: pointer;
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

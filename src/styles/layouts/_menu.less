@@ -1,0 +1,53 @@
+nav{
+    margin: 70px auto 50px !important;
+    ul{
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding-left: 0;
+        li{
+            display: block;
+            position: relative;
+            a{
+                position: relative;
+                color: @color-gray;
+                font-family: @font-text;
+                font-size: 16px;
+                transition: all .4s ease;
+                svg{
+                    position: absolute;
+                    left: 50%;
+                    top: -70px;
+                    transform: translateX(-50%);
+                    path{
+                        transition: all .6s ease;
+                    }
+                    circle{
+                        transition: all .6s ease;
+                    }
+                    ellipse{
+                        transition: all .6s ease;
+                    }
+                }
+                &:hover{
+                    color: @color-bluegreen;
+                    font-weight: bold;
+                    svg{
+                        path{
+                            fill: @color-bluegreen;
+                        }
+                        circle{
+                            fill: @color-bluegreen;
+                        }
+                        ellipse{
+                            fill: @color-bluegreen;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .responsive(@screen-sm,{
+        display: none;
+    });
+}

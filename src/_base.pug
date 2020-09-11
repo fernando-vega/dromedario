@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+html(lang="es")
+	head
+		// METADATA
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible",content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(name="HandheldFriendly" content="true")
+		meta(name="robots" content="index, follow")
+		meta(name="keywords" content="")
+		meta(name="application-name" content="Titulo Pagina")
+		//TITLE
+		title Dromedario
+		//Config
+		link(rel="shortcut icon",href="images/logo/favicon.png",type="image/png")
+		link(rel="icon",href="images/logo/favicon.png",type="image/x-icon", sizes="16x16 32x32")
+		// BASE STYLES
+		link(href="vendor/normalize.min.css",rel="stylesheet")
+		link(href="vendor/flexboxgrid.min.css",rel="stylesheet")
+		link(href="css/main.min.css",rel="stylesheet")
+		// OWL SLIDE
+		link(href="vendor/owl-carousel/assets/owl.carousel.min.css", rel="stylesheet")
+		link(href="vendor/owl-carousel/assets/owl.theme.default.min.css", rel="stylesheet")
+
+		script(src="vendor/jquery.min.js")
+	body
+		include __header
+
+		section.content
+			block content
+
+		include __footer
+		div.modal__loading
+		div.message__popup
+			div.row.middle-xs
+				div.logo
+					img(src='images/logo/logo.png', alt='Logo Dromedario')
+				div.message__content
+					h3.message__title Notificación Sistema
+					p.message__text Su mensaje se ha enviado correctamente
+		//LAZYLINE
+		script(src="vendor/lazyline.min.js")
+		// OWL SLIDE
+		script(src="vendor/owl-carousel/owl.carousel.min.js")
+		// Animations SVG
+		script(src="js/animationsvg.js")
+
+		//Jquery UI
+		script(src="vendor/jquery-ui/minified/core.min.js")
+		script(src="vendor/jquery-ui/minified/widget.min.js")
+		script(src="vendor/jquery-ui/minified/tabs.min.js")
+
+		//Main
+		script(src="js/main.js")

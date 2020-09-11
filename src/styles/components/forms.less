@@ -1,0 +1,116 @@
+.form_footer {
+    padding: 12px 18px 12px 12px;
+    background: #604a9c;
+    background: -moz-linear-gradient(left, #604a9c 0%, #00b6b9 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #604a9c), color-stop(100%, #00b6b9));
+    background: -webkit-linear-gradient(left, #604a9c 0%, #00b6b9 100%);
+    background: -o-linear-gradient(left, #604a9c 0%, #00b6b9 100%);
+    background: -ms-linear-gradient(left, #604a9c 0%, #00b6b9 100%);
+    background: linear-gradient(to right, #604a9c 0%, #00b6b9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#604a9c', endColorstr='#00b6b9', GradientType=1);
+    input,
+    textarea {
+        padding: 10px 12px;
+        width: 100%;
+        color: @color-bluegreen;
+        border: 0 0 2px 0;
+        border-bottom: 2px solid #dadada;
+        border-radius: 7px;
+        transition: all .4s ease-in;
+        &:focus {
+            outline: none;
+            border-color: @color-bluegreen;
+            box-shadow: 0 0 5px @color-bluegreen;
+        }
+    }
+    input::-webkit-input-placeholder {
+        color: @color-blue;
+        font-size: 15px;
+        font-weight: normal;
+        opacity: .6;
+    }
+    textarea::-webkit-input-placeholder {
+        color: @color-blue;
+        font-size: 15px;
+        font-weight: normal;
+        opacity: .6;
+    }
+    input {
+        margin: 3px 12px 3px 0;
+    }
+    textarea {
+        margin: 3px 6px 0 6px;
+        height: 84px;
+        resize: none;
+        .responsive(@screen-sm, {
+            margin: 3px 0 6px 0;
+        }
+        );
+    }
+    button {
+        outline: none;
+        border: none;
+        color: @color-white;
+        background: @color-purple;
+        padding: 12px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: -6px;
+        margin-top: 6px;
+        transition: all .3s;
+        &:hover {
+            box-shadow: 0px 5px 10px 0px rgba(109, 109, 109, 0.6);
+            border-radius: 10px;
+        }
+        .responsive(@screen-sm, {
+            margin: 0;
+        }
+        );
+    }
+}
+
+.form__acceso {
+    label{
+        padding: 15px 6px 0 8px;
+    }
+    input,
+    textarea {
+        padding: 10px 12px;
+        width: 100%;
+        color: @color-bluegreen;
+        border: 0 0 2px 0;
+        border-bottom: 2px solid @color-gray-light;
+        border-radius: 10px;
+        transition: all .4s ease-in;
+        &:focus {
+            outline: none;
+            border-color: @color-bluegreen;
+            box-shadow: 0 0 1px @color-bluegreen;
+        }
+    }
+    input::-webkit-input-placeholder {
+        color: @color-blue;
+        font-size: 15px;
+        font-weight: normal;
+        opacity: .6;
+    }
+    textarea::-webkit-input-placeholder {
+        color: @color-blue;
+        font-size: 15px;
+        font-weight: normal;
+        opacity: .6;
+    }
+    input {
+        margin: 3px 0px 3px 0;
+    }
+    textarea {
+        margin: 3px 6px 0 6px;
+        height: 84px;
+        resize: none;
+        .responsive(@screen-sm, {
+            margin: 3px 0 6px 0;
+        }
+        );
+    }
+}

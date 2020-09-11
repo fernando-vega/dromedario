@@ -1,0 +1,89 @@
+extends _base
+
+block content
+    section.row.center-xs.top-xs.limiter__container
+        //.col-xs-12
+            .row
+                .col-xs-12
+                    .title-line.col-xs-12
+                        h3.medium-title NUESTROS SERVICIOS
+                        span
+                .col-xs-12.col-sm-6
+                    p.txt_justify.padding-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit labore cumque libero sunt voluptatibus sed rerum magni reiciendis dolorem expedita, consectetur! Voluptatibus distinctio optio tempora tenetur pariatur, doloribus, repellat quod?  ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus neque aspernatur provident omnis eveniet, ullam nisi accusantium eos incidunt? Possimus vero, ipsam a fugit obcaecati eligendi illum fuga magnam aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia autem ullam sit excepturi aut quos. Similique nemo adipisci commodi, dignissimos tempora nam corrupti odit cum iusto aperiam ut itaque!, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae officia fuga harum nobis, ratione quas. Doloribus, animi possimus quaerat! Sit neque vitae aperiam rem recusandae harum quaerat quae illum illo!
+                .col-xs-12.col-sm-6
+                     .img-bkg(style="background: url(images/header/tree.jpg) center no-repeat; background-size: cover; height: 280px; width: 100%; margin-bottom: 25px;")
+        .col-xs-12
+            .row
+                .col-xs-12
+                    .title-line.col-xs-12
+                        h3.medium-title que hacemos?
+                        span
+                .col-xs-12
+                    p.txt_justify Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit labore cumque libero sunt voluptatibus sed rerum magni reiciendis dolorem expedita, consectetur! Voluptatibus distinctio optio tempora tenetur pariatur, doloribus, repellat quod?  ipsum dolor sit amet, consectetur adipisicing elit.
+                    .icons-about
+                        .uITabs
+                            ul.tabs__items.row.middle-xs.between-xs.center-xs
+                                li.col-xs
+                                    a(href="#servicio-eficiencia")
+                                        img(src="images/icons/icon-circle.svg", alt="que hacemos")
+                                        .row.center-xs
+                                            p
+                                                strong Eficiencia energética
+                                            p Optimización de recursos
+                                li.col-xs
+                                    a(href="#servicio-plataforma")
+                                        img(src="images/icons/icon-circle.svg", alt="que hacemos")
+                                        .row.center-xs
+                                            p
+                                                strong Plataforma Dromedario
+                                            p Monitoreo de consumo
+                                li.col-xs
+                                    a(href="#servicio-marketing")
+                                        img(src="images/icons/icon-circle.svg", alt="que hacemos")
+                                        .row.center-xs
+                                            p
+                                                strong Green marketing
+
+                            #servicio-eficiencia.tabs__content
+                                h3 Eficiencia
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                p cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            #servicio-plataforma.tabs__content
+                                h3 Plataforma
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                p cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            #servicio-marketing.tabs__content
+                                h3 Marketing
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                p cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    //section.gray-section
+        .limiter__container.row.middle-xs.center-xs
+            #owl-news.owl-carousel.owl-theme.slide-news
+                .item.row.start-xs
+                    .col-xs-12.col-sm-5(style="background: url(images/news/noticia-1.jpg) center no-repeat; background-size: cover; height: 230px; width: 180px;")
+                    .col-xs-12.col-sm-7.text_slide
+                        h4.title-news Tripulación de vehículo solar viajará a Australia 
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis explicabo hic fugiat beatae temporibus accusamus aliquam, in natus magni ad autem, ea ratione eum dolorum similique repellat sint corporis voluptatibus?
+                        br
+                        a.btn-view(href="noticia.html") ver más
+                .item.row.start-xs
+                    .col-xs-12.col-sm-5(style="background: url(images/news/noticia-2.jpg) center no-repeat; background-size: cover; height: 230px; width: 180px;")
+                    .col-xs-12.col-sm-7.text_slide
+                        h4.title-news Tripulación de vehículo solar viajará a Australia 
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis explicabo hic fugiat beatae temporibus accusamus aliquam, in natus magni ad autem, ea ratione eum dolorum similique repellat sint corporis voluptatibus?
+                        br
+                        a.btn-view(href="noticia.html") ver más
+                .item.row.start-xs
+                    .col-xs-12.col-sm-5(style="background: url(images/news/noticia-1.jpg) center no-repeat; background-size: cover; height: 230px; width: 180px;")
+                    .col-xs-12.col-sm-7.text_slide
+                        h4.title-news Tripulación de vehículo solar viajará a Australia 
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis explicabo hic fugiat beatae temporibus accusamus aliquam, in natus magni ad autem, ea ratione eum dolorum similique repellat sint corporis voluptatibus?
+                        br
+                        a.btn-view(href="noticia.html") ver más
+                .item.row.start-xs
+                    .col-xs-12.col-sm-5(style="background: url(images/news/noticia-2.jpg) center no-repeat; background-size: cover; height: 230px; width: 180px;")
+                    .col-xs-12.col-sm-7.text_slide
+                        h4.title-news Tripulación de vehículo solar viajará a Australia 
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis explicabo hic fugiat beatae temporibus accusamus aliquam, in natus magni ad autem, ea ratione eum dolorum similique repellat sint corporis voluptatibus?
+                        br
+                        a.btn-view(href="noticia.html") ver más

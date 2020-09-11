@@ -1,0 +1,32 @@
+extends _base
+
+block content
+    section.row.center-xs.top-xs.limiter__container
+        .col-xs-12
+            .title-line.col-xs-12
+                h3.large-title Contamos contigo
+                span
+            form.form__acceso.row.start-xs.middle-xs
+                label.col-xs-3 Nombre / Empresa
+                input.col-xs-9(type="text", name="name_or_business")
+                .col-xs-12.col-sm-6.row
+                    label.col-xs-3 ID
+                    input.col-xs-9(type="text", name="id")
+                .col-xs-12.col-sm-6.row
+                    label.col-xs-3 Teléfono
+                    input.col-xs-9(type="phone", name="phone")
+                label.col-xs-3 Empresa
+                input.col-xs-9(type="text", name="name_business")
+                .col-xs-12.col-sm-6.row
+                    label.col-xs-3 Ciudad
+                    input.col-xs-9(type="text", name="name_business")
+                .col-xs-12.col-sm-6.row
+                    label.col-xs-3 Estado
+                    input.col-xs-9(type="phone", name="state")
+                label.col-xs-3 País
+                input.col-xs-9(type="text", name="country")
+                .col-xs-12.row.end-xs
+                    button.btn(type="submit") enviar
+                    
+        //.col-xs-12.col-sm-3
+            include __sponsors
